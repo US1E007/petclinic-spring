@@ -1,15 +1,15 @@
 
-spring.cloud.vault:
-  host: localhost
-  port: 8200
-  scheme: http
-  token: s.qKpaKoOWxI9Y3uktFEoivMPA
-#  ssl:
-#    trust-store: spring.jks
-#    trust-store-password: changeit
-  database:
-    enabled: true
-    role: dev
+# spring.cloud.vault:
+#   host: localhost
+#   port: 8200
+#   scheme: http
+#   token: s.qKpaKoOWxI9Y3uktFEoivMPA
+# #  ssl:
+# #    trust-store: spring.jks
+# #    trust-store-password: changeit
+#   database:
+#     enabled: true
+#     role: dev
     
     
     
