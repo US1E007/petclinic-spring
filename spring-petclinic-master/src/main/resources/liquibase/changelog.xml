@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+	<changeSet author="Prathamesh" id="addRow">
+		<insert tableName="owners">
+			<column name="id" type="INT" value="12">
+				<constraints nullable="false" />
+			</column>
+			<column name="first_name" type="VARCHAR(50)" value="Pramod" />
+			<column name="last_name" type="VARCHAR(50)" value="Pai" />
+			<column name="address" type="VARCHAR(50)" value="21 W. Liberty St." />
+			<column name="city" type="VARCHAR(50)" value="London" />
+			<column name="telephone" type="VARCHAR(50)" value="9123456478" />
+		</insert>
+		<rollback>delete from owners where id=12</rollback>
+	</changeSet>
+</databaseChangeLog>
